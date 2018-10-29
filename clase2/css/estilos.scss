@@ -1,0 +1,24 @@
+$color-principal: blue;
+$color-secundario: orange;
+$tamaño-caja: 500px;
+
+body{
+	background: $color-principal;
+}
+
+.imagen{
+	background: $color-secundario;
+	width: $tamaño-caja;
+	height: $tamaño-caja;
+
+
+	img{
+		width: 20%;
+		&:hover{
+		transform: scale(2);
+		}
+	}
+	&:hover{
+	background: yellow;
+	}
+}

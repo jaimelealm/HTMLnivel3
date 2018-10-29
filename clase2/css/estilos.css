@@ -1,0 +1,23 @@
+body {
+  background: blue;
+}
+
+.imagen {
+  background: orange;
+  width: 500px;
+  height: 500px;
+}
+
+.imagen img {
+  width: 20%;
+}
+
+.imagen img:hover {
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+}
+
+.imagen:hover {
+  background: yellow;
+}

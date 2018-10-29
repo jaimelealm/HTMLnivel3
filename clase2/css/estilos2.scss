@@ -1,0 +1,46 @@
+$color-principal: blue;
+$color-secundario: orange;
+$ancho-caja: 29%;
+$alto-caja: 200px;
+$margen-general: 2%;
+
+body{
+	background: $color-principal;
+}
+
+header{
+    background: $color-principal;
+    width: 100%;
+    height: 300px;
+}
+
+h2{
+    text-align: center;
+}
+
+nav{
+    width: 100%;
+    height: 30px;
+    background: $color-secundario;
+}
+
+figure{
+    width: $ancho-caja;
+    height: $alto-caja;
+    margin-left: 35%;
+}
+
+.caja{
+    float: left;
+	background-color: $color-secundario;
+	width: $ancho-caja;
+    height: $alto-caja;
+    margin: $margen-general;
+
+	img{
+		width: 100%;
+		&:hover{
+		transform: scale(2);
+		}
+	}
+}
