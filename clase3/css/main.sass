@@ -1,0 +1,56 @@
+// $color-principal: yellow
+// $espacios: 10px
+
+// body
+// 	display: flex
+// 	height: 768px
+// 	justify-content: space-between
+// 	align-items: center
+// 	flex-direction: row
+
+// .proyecto
+// 	width: 30%
+// 	position: relative
+// 	overflow: hidden
+
+// 	&:hover .proyecto-texto
+// 		transform: translateY(0%)
+
+// 	&-imagen
+// 		width: 100%
+// 	&-texto
+// 		background: $color-principal
+// 		padding: $espacios
+// 		position: absolute
+// 		bottom: 0
+// 		transform: translateY(100%)
+// 		transition: all .5s;
+// 		font:
+// 			size: 20px
+// 			weight: bold
+// 			family: sans-serif
+
+
+.caja
+	&-padre
+		background: orange
+		width: 50%
+		height: 400px
+		display: grid
+	&-hijo
+		background: pink
+		color: white
+		font-size: 20px
+		display: flex
+		justify-content: center
+		align-items: center
+		&:first-child
+			background: purple
+			grid-column: 1/4
+		&:nth-child(2)
+			background: blue
+			grid-column: 1/2
+		&:nth-child(3)
+			background: yellow
+			grid-column: 1/4
+			grid-row: 1/2

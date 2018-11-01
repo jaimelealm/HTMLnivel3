@@ -1,0 +1,37 @@
+.caja-padre {
+  background: orange;
+  width: 50%;
+  height: 400px;
+  display: grid;
+}
+
+.caja-hijo {
+  background: pink;
+  color: white;
+  font-size: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.caja-hijo:first-child {
+  background: purple;
+  grid-column: 1/4;
+}
+
+.caja-hijo:nth-child(2) {
+  background: blue;
+  grid-column: 1/2;
+}
+
+.caja-hijo:nth-child(3) {
+  background: yellow;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}

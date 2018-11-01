@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.boton {
+  padding: 5px;
+  border-radius: 30px;
+  border: 2px solid orange;
+}
+
+.formulario-registro {
+  width: 40%;
+  background: #1919e6;
+  margin: auto;
+  padding: 15px;
+}
+
+.formulario-input {
+  margin: 10px 0;
+  width: 90%;
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid red;
+}
+
+.formulario-input-contenedor label {
+  display: block;
+  color: white;
+  font-size: 20px;
+}
+
+.formulario-input-contenedor:last-child {
+  text-align: center;
+}
+
+.formulario-button {
+  padding: 5px;
+  border-radius: 3px;
+  border: 5px solid green;
+}
