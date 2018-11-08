@@ -1,0 +1,66 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/*.grid{
+	&-container{
+		display: grid;
+		height: 100vh;
+		grid-template-areas: 
+		'section section section section section'
+		'footer footer header header header'
+		'aside aside aside aside aside';
+		grid-template-rows: repeat(3, 60%);
+		grid-template-columns: repeat(5, auto);
+		grid-gap: 20px;	
+	}
+	&-item{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:nth-child(1){
+			background: orange;
+			grid-area: header;
+		}
+		&:nth-child(2){
+			background: lightblue;
+			grid-area: section;
+		}
+		&:nth-child(3){
+			background: pink;
+			grid-area: aside;
+		}
+		&:nth-child(4){
+			background: green;
+			grid-area: footer;
+		}
+	}
+}*/
+
+.todas-las-cajas{
+	display: grid;
+	grid-template-columns: 60% 35%;
+	grid-template-rows: 200px 500px 200px;
+	grid-gap: 5%;
+	margin: 20px;
+	.cajita{
+		&:nth-child(1){
+			background: lightblue;
+			grid-column: 1/3;
+		}
+		&:nth-child(2){
+			background: tomato;
+			grid-column: 1/2;
+		}
+		&:nth-child(3){
+			background: turquoise;
+			grid-column: 2/3;
+		}
+		&:nth-child(4){
+			background: violet;
+			grid-column: 1/3;
+		}
+	}
+}
